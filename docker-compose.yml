@@ -1,0 +1,59 @@
+version: '3.8'
+
+services:
+  # TF-IDF RAG System
+  tfidf-rag:
+    build: .
+    container_name: tfidf-rag-system
+    ports:
+      - "5004:5004"
+    volumes:
+      - ./data:/app/data
+      - ./documents.json:/app/documents.json
+    environment:
+      - FLASK_ENV=production
+      - MAX_CONTENT_LENGTH=104857600
+    command: ["python", "app_document_rag.py"]
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5004/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # SentenceTransformer RAG System
+  sentence-transformer-rag:
+    build: .
+    container_name: sentence-transformer-rag-system
+    ports:
+      - "5005:5005"
+    volumes:
+      - ./data:/app/data
+      - ./documents_sentence_transformers.json:/app/documents_sentence_transformers.json
+    environment:
+      - FLASK_ENV=production
+      - MAX_CONTENT_LENGTH=104857600
+    command: ["python", "app_sentence_transformers_rag.py"]
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5005/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    depends_on:
+      - tfidf-rag
+
+  # Optional: Redis for caching (uncomment if needed)
+  # redis:
+  #   image: redis:7-alpine
+  #   container_name: rag-redis
+  #   ports:
+  #     - "6379:6379"
+  #   volumes:
+  #     - redis_data:/data
+  #   restart: unless-stopped
+
+volumes:
+  # redis_data:  # Uncomment if using Redis 

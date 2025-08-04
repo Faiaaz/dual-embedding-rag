@@ -1,0 +1,703 @@
+[
+  {
+    "text": "RAG stands for Retrieval-Augmented Generation. It combines information retrieval with text generation to provide more accurate and contextual responses.",
+    "metadata": {
+      "topic": "definition",
+      "source": "educational"
+    },
+    "id": 0
+  },
+  {
+    "text": "Vector embeddings are numerical representations of text that capture semantic meaning. They allow us to find similar documents by comparing their embeddings.",
+    "metadata": {
+      "topic": "embeddings",
+      "source": "technical"
+    },
+    "id": 1
+  },
+  {
+    "text": "The RAG pipeline typically involves: 1) Storing documents with embeddings, 2) Searching for relevant documents when given a query, 3) Using retrieved context to generate a response.",
+    "metadata": {
+      "topic": "pipeline",
+      "source": "process"
+    },
+    "id": 2
+  },
+  {
+    "text": "Cosine similarity is a common method for comparing vector embeddings. It measures the cosine of the angle between two vectors, ranging from -1 to 1.",
+    "metadata": {
+      "topic": "similarity",
+      "source": "mathematical"
+    },
+    "id": 3
+  },
+  {
+    "text": "TF-IDF stands for Term Frequency-Inverse Document Frequency. It is a statistical measure used to evaluate how important a word is to a document in a collection.",
+    "metadata": {
+      "topic": "tfidf",
+      "source": "statistical"
+    },
+    "id": 4
+  },
+  {
+    "text": "JavaScript is a programming language used for web development.",
+    "metadata": {
+      "topic": "programming",
+      "language": "javascript"
+    },
+    "id": 5
+  },
+  {
+    "text": "Python is a high-level programming language known for its readability and simplicity. It is widely used in data science, web development, and artificial intelligence.",
+    "metadata": {
+      "topic": "programming",
+      "language": "python",
+      "difficulty": "beginner"
+    },
+    "id": 6
+  },
+  {
+    "text": "Coffee Machine Program Requirements \n \n \n \n1.\nPrompt user by asking “​What would you like? (espresso/latte/cappuccino):​” \na.\nCheck the user’s input to decide what to do next.  \nb.\nThe prompt should show every time action has completed, e.g. once the drink is \ndispensed. The prompt should show again to serve the next customer. \n \n2.\nTurn off the Coffee Machine by entering “​off​” to the prompt. \na.\nFor maintainers of the coffee machine, they can use “off” as the secret word to turn off \nthe machine. Your code should end execution when this happens. \n \n3.\nPrint report. \na.\nWhen the user enters “report” to the prompt, a report should be generated that shows \nthe current resource values. e.g.  \nWater: 100ml \nMilk: 50ml \nCoffee: 76g \nMoney: $2.5 \n \n4.\nCheck resources sufficient? \na.\nWhen the user chooses a drink, the program should check if there are enough \nresources to make that drink.  \nb.\nE.g. if Latte requires 200ml water but there is only 100ml left in the machine.",
+    "metadata": {
+      "topic": "programming_requirements",
+      "source": "pdf",
+      "chunk_id": 0,
+      "total_chunks": 4,
+      "filename": "Coffee_Machine_Program_Requirements.pdf"
+    },
+    "id": 7
+  },
+  {
+    "text": "ent? \na.\nWhen the user chooses a drink, the program should check if there are enough \nresources to make that drink.  \nb.\nE.g. if Latte requires 200ml water but there is only 100ml left in the machine. It should \nnot continue to make the drink but print: “​Sorry there is not enough water.​” \nc.\nThe same should happen if another resource is depleted, e.g. milk or coffee. \n \n5.\nProcess coins. \na.\nIf there are sufficient resources to make the drink selected, then the program should \nprompt the user to insert coins.  \nb.\nRemember that quarters = $0.25, dimes = $0.10, nickles = $0.05, pennies = $0.01 \nc.\nCalculate the monetary value of the coins inserted. E.g. 1 quarter, 2 dimes, 1 nickel, 2 \npennies = 0.25 + 0.1 x 2 + 0.05 + 0.01 x 2 = $0.52 \n \n6.\nCheck transaction successful? \na.\nCheck that the user has inserted enough money to purchase the drink they selected. \nE.g Latte cost $2.50, but they only inserted $0.",
+    "metadata": {
+      "topic": "programming_requirements",
+      "source": "pdf",
+      "chunk_id": 1,
+      "total_chunks": 4,
+      "filename": "Coffee_Machine_Program_Requirements.pdf"
+    },
+    "id": 8
+  },
+  {
+    "text": "2 + 0.05 + 0.01 x 2 = $0.52 \n \n6.\nCheck transaction successful? \na.\nCheck that the user has inserted enough money to purchase the drink they selected. \nE.g Latte cost $2.50, but they only inserted $0.52 then after counting the coins the \nprogram should say “​Sorry that's not enough money. Money refunded.​”. \nb.\nBut if the user has inserted enough money, then the cost of the drink gets added to the \nmachine as the profit and this will be reflected the next time “report” is triggered. E.g.  \nWater: 100ml \nMilk: 50ml \nCoffee: 76g \nMoney: $2.5 \nc.\nIf the user has inserted too much money, the machine should offer change.  \nE.g. “Here is $2.45 dollars in change.” The change should be rounded to 2 decimal \nplaces. \n \n \n7.\nMake Coffee. \na.\nIf the transaction is successful and there are enough resources to make the drink the \nuser selected, then the ingredients to make the drink should be deducted from the \ncoffee machine resources.  \n \nE.g.",
+    "metadata": {
+      "topic": "programming_requirements",
+      "source": "pdf",
+      "chunk_id": 2,
+      "total_chunks": 4,
+      "filename": "Coffee_Machine_Program_Requirements.pdf"
+    },
+    "id": 9
+  },
+  {
+    "text": "he transaction is successful and there are enough resources to make the drink the \nuser selected, then the ingredients to make the drink should be deducted from the \ncoffee machine resources.  \n \nE.g. report before purchasing latte: \nWater: 300ml \nMilk: 200ml \nCoffee: 100g \nMoney: $0 \n \nReport after purchasing latte: \nWater: 100ml \nMilk: 50ml \nCoffee: 76g \nMoney: $2.5 \n \nb.\nOnce all resources have been deducted, tell the user “Here is your latte. Enjoy!”. If \nlatte was their choice of drink.",
+    "metadata": {
+      "topic": "programming_requirements",
+      "source": "pdf",
+      "chunk_id": 3,
+      "total_chunks": 4,
+      "filename": "Coffee_Machine_Program_Requirements.pdf"
+    },
+    "id": 10
+  },
+  {
+    "text": "Computing Networks\nChapter 7 –End-to-End Data\nComputing Networks\nProblem\n• From the network’s perspective, application programs \nsend messages to each other. \n• Each of these messages is just an uninterpreted string \nof bytes. \n• From the application’s perspective, however, these \nmessages contain various kinds of data—arrays of \nintegers, video frames, lines of text, digital images, \nand so on. In other words, these bytes have meaning. \n2\nLiu\nComputing Networks\nProblem\n• We now consider the problem of how best to encode \nthe different kinds of data that application programs \nwant to exchange into byte strings.\n3\nLiu\nComputing Networks\nChapter Outline\n• Presentation Formatting\n• Multimedia Data\n4\nLiu\nComputing Networks\n• One of the most common transformations of network \ndata is from the representation used by the application \nprogram into a form that is suitable for transmission \nover a network and vice versa. \n• This transformation is typically called presentation \nformatting.",
+    "metadata": {
+      "topic": "data_encoding",
+      "source": "pdf",
+      "chunk_id": 0,
+      "total_chunks": 32,
+      "filename": "Chapter_7_Data_Encoding.pdf"
+    },
+    "id": 11
+  },
+  {
+    "text": "m the representation used by the application \nprogram into a form that is suitable for transmission \nover a network and vice versa. \n• This transformation is typically called presentation \nformatting.\nPresentation Formatting\n5\nLiu\nComputing Networks\n• The sending program translates the data it wants to \ntransmit from the representation it uses internally into a \nmessage that can be transmitted over the network; that \nis, the data is encoded in a message. \n• On the receiving side, the application translates this \narriving message into a representation that it can then \nprocess; that is, the message is decoded. Encoding is \nsometimes called argument marshalling, and decoding \nis sometimes called unmarshalling. This terminology \ncomes from the RPC world.\nPresentation Formatting\n6\nLiu\nComputing Networks\nPresentation formatting involves encoding \nand decoding application data\n7\nLiu\nPresentation Formatting\nComputing Networks\nBig-endian and little-endian byte order for \nthe integer 34,677,374.",
+    "metadata": {
+      "topic": "data_encoding",
+      "source": "pdf",
+      "chunk_id": 1,
+      "total_chunks": 32,
+      "filename": "Chapter_7_Data_Encoding.pdf"
+    },
+    "id": 12
+  },
+  {
+    "text": "Networks\nPresentation formatting involves encoding \nand decoding application data\n7\nLiu\nPresentation Formatting\nComputing Networks\nBig-endian and little-endian byte order for \nthe integer 34,677,374.\n8\nLiu\nPresentation Formatting\nComputing Networks\n• Taxonomy\n– Data Types\n• The first question is what data types the system is going to support. In \ngeneral, we can classify the types supported by an argument \nmarshalling mechanism at three levels.\n– At the lowest level, a marshalling system operates on some set of base types. \nTypically, the base types include integers, floating-point numbers, and characters. \nThe system might also support ordinal types and booleans.\n– At the next level are flat types—structures and arrays.\n– At the highest level, the marshalling system might have to deal with complex \ntypes—those types that are built using pointers\n– In summary, depending on how complicated the type system is, the task of \nargument marshalling usually involves converting the base types,",
+    "metadata": {
+      "topic": "data_encoding",
+      "source": "pdf",
+      "chunk_id": 2,
+      "total_chunks": 32,
+      "filename": "Chapter_7_Data_Encoding.pdf"
+    },
+    "id": 13
+  },
+  {
+    "text": "th complex \ntypes—those types that are built using pointers\n– In summary, depending on how complicated the type system is, the task of \nargument marshalling usually involves converting the base types, packing the \nstructures, and linearizing the complex data structures, all to form a contiguous \nmessage that can be transmitted over the network\n9\nLiu\nPresentation Formatting\nComputing Networks\nArgument marshalling: converting, \npacking, and linearizing\n10\nLiu\nPresentation Formatting\nComputing Networks\n• Conversion Strategy\n– Once the type system is established, the next issue is what \nconversion strategy the argument marshaller will use. There \nare two general options: \n• canonical intermediate form and receiver-makes-right\n11\nLiu\nPresentation Formatting\nComputing Networks\n• Conversion Strategy\n• The idea of canonical intermediate form is to settle on an external \nrepresentation for each type; the sending host translates from its \ninternal representation to this external representation b",
+    "metadata": {
+      "topic": "data_encoding",
+      "source": "pdf",
+      "chunk_id": 3,
+      "total_chunks": 32,
+      "filename": "Chapter_7_Data_Encoding.pdf"
+    },
+    "id": 14
+  },
+  {
+    "text": "egy\n• The idea of canonical intermediate form is to settle on an external \nrepresentation for each type; the sending host translates from its \ninternal representation to this external representation before sending \ndata, and the receiver translates from this external representation into \nits local representation when receiving data\n• The alternative, which is sometimes called receiver-makes-right, has \nthe sender transmit data in its own internal format; the sender does \nnot convert the base types, but usually has to pack and flatten more \ncomplex data structures. The receiver is then responsible for \ntranslating the data from the sender’s format into its own local format\n12\nLiu\nPresentation Formatting\nComputing Networks\n• Tags\n– The third issue in argument marshalling is how the receiver \nknows what kind of data is contained in the message it \nreceives. There are two common approaches: tagged and\nuntagged data.",
+    "metadata": {
+      "topic": "data_encoding",
+      "source": "pdf",
+      "chunk_id": 4,
+      "total_chunks": 32,
+      "filename": "Chapter_7_Data_Encoding.pdf"
+    },
+    "id": 15
+  },
+  {
+    "text": "works\n• Tags\n– The third issue in argument marshalling is how the receiver \nknows what kind of data is contained in the message it \nreceives. There are two common approaches: tagged and\nuntagged data. \n• A tag is any additional information included in a message—beyond \nthe concrete representation of the base types—that helps the receiver \ndecode the message. \n• The alternative, of course, is not to use tags. How does the receiver \nknow how to decode the data in this case? It knows because it was \nprogrammed to know.\n13\nLiu\nPresentation Formatting\nComputing Networks\n• Tags\nA 32-bit integer encoded in a tagged \nmessage\n14\nLiu\nPresentation Formatting\nComputing Networks\n• Stubs\n– A stub is the piece of code that implements argument \nmarshalling. \n– Stubs are typically used to support RPC. On the client side, \nthe stub marshalls the procedure arguments into a message \nthat can be transmitted by means of the RPC protocol.",
+    "metadata": {
+      "topic": "data_encoding",
+      "source": "pdf",
+      "chunk_id": 5,
+      "total_chunks": 32,
+      "filename": "Chapter_7_Data_Encoding.pdf"
+    },
+    "id": 16
+  },
+  {
+    "text": "argument \nmarshalling. \n– Stubs are typically used to support RPC. On the client side, \nthe stub marshalls the procedure arguments into a message \nthat can be transmitted by means of the RPC protocol. \n– On the server side, the stub converts the message back into a \nset of variables that can be used as arguments to call the \nremote procedure. \n– Stubs can either be interpreted or compiled\n15\nLiu\nPresentation Formatting\nComputing Networks\n• Stubs\nStub compiler takes interface description as input and \noutputs client and server stubs.\n16\nLiu\nPresentation Formatting\nComputing Networks\n• Examples\n– XDR\n• External Data Representation (XDR) is the network format used with \nSunRPC. In the taxonomy just introduced, XDR\n– supports the entire C type system with the exception of function pointers\n– defines a canonical intermediate form\n– does not use tags (except to indicate array lengths)\n– uses compiled stubs\n17\nLiu\nPresentation Formatting\nComputing Networks\n• Examples\n– XDR\n• An XDR integer is",
+    "metadata": {
+      "topic": "data_encoding",
+      "source": "pdf",
+      "chunk_id": 6,
+      "total_chunks": 32,
+      "filename": "Chapter_7_Data_Encoding.pdf"
+    },
+    "id": 17
+  },
+  {
+    "text": "efines a canonical intermediate form\n– does not use tags (except to indicate array lengths)\n– uses compiled stubs\n17\nLiu\nPresentation Formatting\nComputing Networks\n• Examples\n– XDR\n• An XDR integer is a 32-bit data item that encodes a C integer. \n• It is represented in twos complement notation, with the most \nsignificant byte of the C integer in the first byte of the XDR integer, \nand the least significant byte of the C integer in the fourth byte of the \nXDR integer. \n– That is, XDR uses big-endian format for integers. \n• XDR supports both signed and unsigned integers, just as C does.\n18\nLiu\nPresentation Formatting\nComputing Networks\n• Examples\n– XDR\n• XDR represents variable-length arrays by first specifying an unsigned \ninteger (4 bytes) that gives the number of elements in the array, \nfollowed by that many elements of the appropriate type. \n• XDR encodes the components of a structure in the order of their \ndeclaration in the structure.",
+    "metadata": {
+      "topic": "data_encoding",
+      "source": "pdf",
+      "chunk_id": 7,
+      "total_chunks": 32,
+      "filename": "Chapter_7_Data_Encoding.pdf"
+    },
+    "id": 18
+  },
+  {
+    "text": "at gives the number of elements in the array, \nfollowed by that many elements of the appropriate type. \n• XDR encodes the components of a structure in the order of their \ndeclaration in the structure. \n• For both arrays and structures, the size of each element/ component is \nrepresented in a multiple of 4 bytes. Smaller data types are padded out \nto 4 bytes with 0s. \n• The exception to this “pad to 4 bytes” rule is made for characters, \nwhich are encoded one per byte.\n19\nLiu\nPresentation Formatting\nComputing Networks\n• Examples\n– XDR\nExample encoding of a structure in XDR\n20\nLiu\nPresentation Formatting\nComputing Networks\n• Examples\n– ASN.1\n• Abstract Syntax Notation One (ASN.1) is an ISO standard that \ndefines, among other things, a representation for data sent over a \nnetwork. \n• The representation-specific part of ASN.1 is called the Basic \nEncoding Rules (BER). \n• ASN.1 supports the C type system without function pointers, defines \na canonical intermediate form, and uses type tags.",
+    "metadata": {
+      "topic": "data_encoding",
+      "source": "pdf",
+      "chunk_id": 8,
+      "total_chunks": 32,
+      "filename": "Chapter_7_Data_Encoding.pdf"
+    },
+    "id": 19
+  },
+  {
+    "text": "resentation-specific part of ASN.1 is called the Basic \nEncoding Rules (BER). \n• ASN.1 supports the C type system without function pointers, defines \na canonical intermediate form, and uses type tags.\n• Its stubs can be either interpreted or compiled. \n• One of the claims to fame of ASN.1 BER is that it is used by the \nInternet standard Simple Network Management Protocol (SNMP).\n21\nLiu\nPresentation Formatting\nComputing Networks\n• Examples\n– ASN.1\n• ASN.1 represents each data item with a triple of the form\n< tag, length, value >\n• The tag is typically an 8-bit field, although ASN.1 allows for the \ndefinition of multi-byte tags. \n• The length field specifies how many bytes make up the value;\n• Compound data types, such as structures, can be constructed by \nnesting primitive types\n22\nLiu\nPresentation Formatting\nComputing Networks\n• Examples\n– ASN.1\nCompound types created by means of nesting in \nASN.1/BER\nASN.",
+    "metadata": {
+      "topic": "data_encoding",
+      "source": "pdf",
+      "chunk_id": 9,
+      "total_chunks": 32,
+      "filename": "Chapter_7_Data_Encoding.pdf"
+    },
+    "id": 20
+  },
+  {
+    "text": "s, such as structures, can be constructed by \nnesting primitive types\n22\nLiu\nPresentation Formatting\nComputing Networks\n• Examples\n– ASN.1\nCompound types created by means of nesting in \nASN.1/BER\nASN.1/BER representation for a 4-byte \ninteger\n23\nLiu\nPresentation Formatting\nComputing Networks\n• Examples\n– NDR\n• Network Data Representation (NDR) is the data-encoding standard \nused in the Distributed Computing Environment \n• Unlike XDR and ASN.1, NDR uses receiver-makes-right. It does this \nby inserting an architecture tag at the front of each message; \nindividual data items are untagged. \n• NDR uses a compiler to generate stubs. \n– This compiler takes a description of a program written in the Interface Definition \nLanguage (IDL) and generates the necessary stubs\n– IDL looks pretty much like C, and so essentially supports the C type system.\n24\nLiu\nPresentation Formatting\nComputing Networks\n• Examples\n– NDR\nASN.",
+    "metadata": {
+      "topic": "data_encoding",
+      "source": "pdf",
+      "chunk_id": 10,
+      "total_chunks": 32,
+      "filename": "Chapter_7_Data_Encoding.pdf"
+    },
+    "id": 21
+  },
+  {
+    "text": "Language (IDL) and generates the necessary stubs\n– IDL looks pretty much like C, and so essentially supports the C type system.\n24\nLiu\nPresentation Formatting\nComputing Networks\n• Examples\n– NDR\nASN.1/BER representation for length: (a) 1 byte; (b) multibyte\nNDR’s architecture tag\n25\nLiu\nPresentation Formatting\nComputing Networks\n• Markup Languages – XML\n– Markup languages, of which HTML and XML are both \nexamples, take the tagged data approach to the extreme. \n– Data is represented as text, and text tags known as markup \nare intermingled with the data text to express information \nabout the data. \n– In the case of HTML, markup merely indicates how the text \nshould be displayed; other markup languages like XML can \nexpress the type and structure of the data\n26\nLiu\nPresentation Formatting\nComputing Networks\n• Markup Languages – XML\n– XML syntax looks much like HTML.",
+    "metadata": {
+      "topic": "data_encoding",
+      "source": "pdf",
+      "chunk_id": 11,
+      "total_chunks": 32,
+      "filename": "Chapter_7_Data_Encoding.pdf"
+    },
+    "id": 22
+  },
+  {
+    "text": "displayed; other markup languages like XML can \nexpress the type and structure of the data\n26\nLiu\nPresentation Formatting\nComputing Networks\n• Markup Languages – XML\n– XML syntax looks much like HTML. \n– For example, an employee record in a hypothetical XML-\nbased language might look like the XML document (next \nslide), which might be stored in a file named employee.xml. \n– The first line indicates the version of XML being used, and \nthe remaining lines represent four fields that make up the \nemployee record, the last of which (hire date) contains three \nsub-fields. \n27\nLiu\nPresentation Formatting\nComputing Networks\n• Markup Languages – XML\n– In other words, XML syntax provides for a nested structure \nof tag/value pairs, which is equivalent to a tree structure for \nthe represented data (with employee as the root). \n– This is similar to XDR, ASN.1, and NDR’s ability to \nrepresent compound types, but in a format that can be both \nprocessed by programs and read by humans.",
+    "metadata": {
+      "topic": "data_encoding",
+      "source": "pdf",
+      "chunk_id": 12,
+      "total_chunks": 32,
+      "filename": "Chapter_7_Data_Encoding.pdf"
+    },
+    "id": 23
+  },
+  {
+    "text": "resented data (with employee as the root). \n– This is similar to XDR, ASN.1, and NDR’s ability to \nrepresent compound types, but in a format that can be both \nprocessed by programs and read by humans. \n– More importantly, programs such as parsers can be used \nacross different XML-based languages, because the \ndefinitions of those languages are themselves expressed as \nmachine-readable data that can be input to the programs.\n28\nLiu\nPresentation Formatting\nComputing Networks\n• Markup Languages – XML\n<?xml version=\"1.0\"?>\n<employee>\n<name>John Doe</name>\n<title>Head Bottle Washer</title>\n<id>123456789</id>\n<hiredate>\n<day>5</day>\n<month>June</month>\n<year>1986</year>\n</hiredate>\n</employee>\n29\nLiu\nPresentation Formatting\nComputing Networks\n• Markup Languages – XML\n– The definition of a specific XML-based language is given by \na schema, which is a database term for a specification of how \nto interpret a collection of data. \n– There are a number of schema languages defined for XML.",
+    "metadata": {
+      "topic": "data_encoding",
+      "source": "pdf",
+      "chunk_id": 13,
+      "total_chunks": 32,
+      "filename": "Chapter_7_Data_Encoding.pdf"
+    },
+    "id": 24
+  },
+  {
+    "text": "a specific XML-based language is given by \na schema, which is a database term for a specification of how \nto interpret a collection of data. \n– There are a number of schema languages defined for XML. \n– We will focus here on the leading standard, known by the \nnone-too-surprising name XML Schema. \n– An individual schema defined using XML Schema is known \nas an XML Schema Document (XSD). \n30\nLiu\nPresentation Formatting\nComputing Networks\n• Markup Languages – XML\n– The XSD for the employee.xml example is shown in the next \nslide \n• it defines the language to which the example document conforms. It \nmight be stored in a file named employee.xsd.\n31\nLiu\nPresentation Formatting\nComputing Networks\n<?xml version=\"1.0\"?>\n<schema xmlns=\"http://www.w3.org/2001/XMLSchema\">\n<element name=\"employee\">\n<complexType>\n<sequence>\n<element name=\"name\" type=\"string\"/>\n<element name=\"title\" type=\"string\"/>\n<element name=\"id\" type=\"string\"/>\n<element name=\"hiredate\">\n<complexType>\n<sequence>\n<element name=\"",
+    "metadata": {
+      "topic": "data_encoding",
+      "source": "pdf",
+      "chunk_id": 14,
+      "total_chunks": 32,
+      "filename": "Chapter_7_Data_Encoding.pdf"
+    },
+    "id": 25
+  },
+  {
+    "text": "complexType>\n<sequence>\n<element name=\"name\" type=\"string\"/>\n<element name=\"title\" type=\"string\"/>\n<element name=\"id\" type=\"string\"/>\n<element name=\"hiredate\">\n<complexType>\n<sequence>\n<element name=\"day\" type=\"integer\"/>\n<element name=\"month\" type=\"string\"/>\n<element name=\"year\" type=\"integer\"/>\n</sequence>\n</complexType>\n</element>\n</sequence>\n</complexType>\n</element>\n</schema>\n32\nLiu\nPresentation Formatting\nComputing Networks\n• Multimedia data, comprising audio, video, and still images, now \nmakes up the majority of traffic on the Internet by many \nestimates. \n– This is a relatively recent development—it may be hard to believe now, \nbut there was no YouTube before 2005. \n• Part of what has made the widespread transmission of \nmultimedia across networks possible is advances in compression \ntechnology. \n• Because multimedia data is consumed mostly by humans using \ntheir senses—vision and hearing—and processed by the human \nbrain, there are unique challenges to compressing it.",
+    "metadata": {
+      "topic": "data_encoding",
+      "source": "pdf",
+      "chunk_id": 15,
+      "total_chunks": 32,
+      "filename": "Chapter_7_Data_Encoding.pdf"
+    },
+    "id": 26
+  },
+  {
+    "text": "ompression \ntechnology. \n• Because multimedia data is consumed mostly by humans using \ntheir senses—vision and hearing—and processed by the human \nbrain, there are unique challenges to compressing it. \n33\nLiu\nMultimedia Data\nComputing Networks\n• You want to try to keep the information that is most important to \na human, while getting rid of anything that doesn’t improve the \nhuman’s perception of the visual or auditory experience. \n• Hence, both computer science and the study of human \nperception come into play. \n• In this section we’ll look at some of the major efforts in \nrepresenting and compressing multimedia data.\n34\nLiu\nMultimedia Data\nComputing Networks\n•\nTo get a sense of how important compression has been to the spread of \nnetworked multimedia, consider the following example. \n•\nA high-definition TV screen has something like 1080 × 1920 pixels, each \nof which has 24 bits of color information, so each frame is 1080 × 1920 ×\n24 = 50Mb and so if you want to send 24 frames per sec",
+    "metadata": {
+      "topic": "data_encoding",
+      "source": "pdf",
+      "chunk_id": 16,
+      "total_chunks": 32,
+      "filename": "Chapter_7_Data_Encoding.pdf"
+    },
+    "id": 27
+  },
+  {
+    "text": "high-definition TV screen has something like 1080 × 1920 pixels, each \nof which has 24 bits of color information, so each frame is 1080 × 1920 ×\n24 = 50Mb and so if you want to send 24 frames per second, that would be \nover 1Gbps. \n•\nThat’s a lot more than most Internet users can get access to, by a good \nmargin. \n•\nBy contrast, modern compression techniques can get a reasonably high \nquality HDTV signal down to the range of 10 Mbps, a two order of \nmagnitude reduction, and well within the reach of many broadband users. \n•\nSimilar compression gains apply to lower quality video such as YouTube \nclips—web video could never have reached its current popularity without \ncompression to make all those entertaining videos fit within the bandwidth \nof today’s networks.\n35\nLiu\nMultimedia Data\nComputing Networks\n• Lossless Compression Techniques\n– In many ways, compression is inseparable from data encoding.",
+    "metadata": {
+      "topic": "data_encoding",
+      "source": "pdf",
+      "chunk_id": 17,
+      "total_chunks": 32,
+      "filename": "Chapter_7_Data_Encoding.pdf"
+    },
+    "id": 28
+  },
+  {
+    "text": "taining videos fit within the bandwidth \nof today’s networks.\n35\nLiu\nMultimedia Data\nComputing Networks\n• Lossless Compression Techniques\n– In many ways, compression is inseparable from data encoding.\n• That is, in thinking about how to encode a piece of data in a set of bits, we might just \nas well think about how to encode the data in the smallest set of bits possible. \n• For example, if you have a block of data that is made up of the 26 symbols A \nthrough Z, and if all of these symbols have an equal chance of occurring in the data \nblock you are encoding, then encoding each symbol in 5 bits is the best you can do \n(since 25 = 32 is the lowest power of 2 above 26). \n• If, however, the symbol R occurs 50% of the time, then it would be a good idea to \nuse fewer bits to encode the R than any of the other symbols.",
+    "metadata": {
+      "topic": "data_encoding",
+      "source": "pdf",
+      "chunk_id": 18,
+      "total_chunks": 32,
+      "filename": "Chapter_7_Data_Encoding.pdf"
+    },
+    "id": 29
+  },
+  {
+    "text": "(since 25 = 32 is the lowest power of 2 above 26). \n• If, however, the symbol R occurs 50% of the time, then it would be a good idea to \nuse fewer bits to encode the R than any of the other symbols. \n– In general, if you know the relative probability that each symbol will \noccur in the data, then you can assign a different number of bits to each \npossible symbol in a way that minimizes the number of bits it takes to \nencode a given block of data. \n– This is the essential idea of Huffman codes, one of the important early \ndevelopments in data compression.\n36\nLiu\nMultimedia Data\nComputing Networks\n• Lossless Compression Techniques\n– Run length Encoding\n• Run length encoding (RLE) is a compression technique with a \nbrute-force simplicity.\n• The idea is to replace consecutive occurrences of a given symbol \nwith only one copy of the symbol, plus a count of how many times \nthat symbol occurs—hence the name “run length.” \n• For example, the string AAABBCDDDD would be encoded as \n3A2B1C4D.",
+    "metadata": {
+      "topic": "data_encoding",
+      "source": "pdf",
+      "chunk_id": 19,
+      "total_chunks": 32,
+      "filename": "Chapter_7_Data_Encoding.pdf"
+    },
+    "id": 30
+  },
+  {
+    "text": "f a given symbol \nwith only one copy of the symbol, plus a count of how many times \nthat symbol occurs—hence the name “run length.” \n• For example, the string AAABBCDDDD would be encoded as \n3A2B1C4D.\n37\nLiu\nMultimedia Data\nComputing Networks\n• Lossless Compression Techniques\n– Differential Pulse Code Modulation\n• Another simple lossless compression algorithm is Differential Pulse \nCode Modulation (DPCM). \n• The idea here is to first output a reference symbol and then, for each \nsymbol in the data, to output the difference between that symbol \nand the reference symbol. \n• For example, using symbol A as the reference symbol, the string \nAAABBCDDDD would be encoded as A0001123333 since A is the \nsame as the reference symbol, B has a difference of 1 from the \nreference symbol, and so on.\n38\nLiu\nMultimedia Data\nComputing Networks\n• Lossless Compression Techniques\n– Dictionary based Methods\n• The final lossless compression method we consider is the \ndictionary-based approach, of which the L",
+    "metadata": {
+      "topic": "data_encoding",
+      "source": "pdf",
+      "chunk_id": 20,
+      "total_chunks": 32,
+      "filename": "Chapter_7_Data_Encoding.pdf"
+    },
+    "id": 31
+  },
+  {
+    "text": "iu\nMultimedia Data\nComputing Networks\n• Lossless Compression Techniques\n– Dictionary based Methods\n• The final lossless compression method we consider is the \ndictionary-based approach, of which the Lempel-Ziv (LZ) \ncompression algorithm is the best known. \n• The Unix compress and gzip commands use variants of the LZ \nalgorithm.\n• The idea of a dictionary-based compression algorithm is to build a \ndictionary (table) of variable-length strings (think of them as \ncommon phrases) that you expect to find in the data, and then to \nreplace each of these strings when it appears in the data with the \ncorresponding index to the dictionary. \n39\nLiu\nMultimedia Data\nComputing Networks\n• Lossless Compression Techniques\n– Dictionary based Methods\n• For example, instead of working with individual characters in text \ndata, you could treat each word as a string and output the index in \nthe dictionary for that word.",
+    "metadata": {
+      "topic": "data_encoding",
+      "source": "pdf",
+      "chunk_id": 21,
+      "total_chunks": 32,
+      "filename": "Chapter_7_Data_Encoding.pdf"
+    },
+    "id": 32
+  },
+  {
+    "text": "ques\n– Dictionary based Methods\n• For example, instead of working with individual characters in text \ndata, you could treat each word as a string and output the index in \nthe dictionary for that word. \n• To further elaborate on this example, the word “compression” has \nthe index 4978 in one particular dictionary; it is the 4978th word in \n/usr/share/dict/words. \n• To compress a body of text, each time the string “compression” \nappears, it would be replaced by 4978.\n40\nLiu\nMultimedia Data\nComputing Networks\n• Image Representation and Compression\n– Given the increase in the use of digital imagery in recent \nyears—this use was spawned by the invention of graphical \ndisplays, not high-speed networks—the need for standard \nrepresentation formats and compression algorithms for \ndigital imagery data has grown more and more critical. \n– In response to this need, the ISO defined a digital image \nformat known as JPEG, named after the Joint Photographic \nExperts Group that designed it.",
+    "metadata": {
+      "topic": "data_encoding",
+      "source": "pdf",
+      "chunk_id": 22,
+      "total_chunks": 32,
+      "filename": "Chapter_7_Data_Encoding.pdf"
+    },
+    "id": 33
+  },
+  {
+    "text": "l imagery data has grown more and more critical. \n– In response to this need, the ISO defined a digital image \nformat known as JPEG, named after the Joint Photographic \nExperts Group that designed it. (The “Joint” in JPEG stands \nfor a joint ISO/ITU effort.) \n41\nLiu\nMultimedia Data\nComputing Networks\n• Image Representation and Compression\n– JPEG is the most widely used format for still images in use \ntoday. \n– At the heart of the definition of the format is a compression \nalgorithm, which we describe below. \n– Many techniques used in JPEG also appear in MPEG, the \nset of standards for video compression and transmission \ncreated by the Moving Picture Experts Group.\n42\nLiu\nMultimedia Data\nComputing Networks\n• Image Representation and Compression\n– Digital images are made up of pixels (hence the megapixels \nquoted in digital camera advertisements).",
+    "metadata": {
+      "topic": "data_encoding",
+      "source": "pdf",
+      "chunk_id": 23,
+      "total_chunks": 32,
+      "filename": "Chapter_7_Data_Encoding.pdf"
+    },
+    "id": 34
+  },
+  {
+    "text": "Experts Group.\n42\nLiu\nMultimedia Data\nComputing Networks\n• Image Representation and Compression\n– Digital images are made up of pixels (hence the megapixels \nquoted in digital camera advertisements).\n– Each pixel represents one location in the two-dimensional \ngrid that makes up the image, and for color images, each \npixel has some numerical value representing a color. \n– There are lots of ways to represent colors, referred to as \ncolor spaces: the one most people are familiar with is RGB \n(red, green, blue). \n43\nLiu\nMultimedia Data\nComputing Networks\n• Image Representation and Compression\n– You can think of color as being three dimensional \nquantity—you can make any color out of red, green and \nblue light in different amounts. \n– In a three-dimensional space, there are lots of different, \nvalid ways to describe a given point (consider Cartesian and \npolar co-ordinates, for example).",
+    "metadata": {
+      "topic": "data_encoding",
+      "source": "pdf",
+      "chunk_id": 24,
+      "total_chunks": 32,
+      "filename": "Chapter_7_Data_Encoding.pdf"
+    },
+    "id": 35
+  },
+  {
+    "text": "een and \nblue light in different amounts. \n– In a three-dimensional space, there are lots of different, \nvalid ways to describe a given point (consider Cartesian and \npolar co-ordinates, for example).\n– Similarly, there are various ways to describe a color using \nthree quantities, and the most common alternative to RGB \nis YUV. The Y is luminance, roughly the overall brightness \nof the pixel, and U and V contain chrominance, or color \ninformation. \n44\nLiu\nMultimedia Data\nComputing Networks\n• Image Representation and Compression\n– Let’s look at the example of the Graphical Interchange \nFormat (GIF). \n• GIF uses the RGB color space, and starts out with 8 bits to \nrepresent each of the three dimensions of color for a total of 24 bits. \n• Rather than sending those 24 bits per pixel, however, GIF first \nreduces 24-bit color images to 8-bit color images.",
+    "metadata": {
+      "topic": "data_encoding",
+      "source": "pdf",
+      "chunk_id": 25,
+      "total_chunks": 32,
+      "filename": "Chapter_7_Data_Encoding.pdf"
+    },
+    "id": 36
+  },
+  {
+    "text": "bits to \nrepresent each of the three dimensions of color for a total of 24 bits. \n• Rather than sending those 24 bits per pixel, however, GIF first \nreduces 24-bit color images to 8-bit color images. \n• This is done by identifying the colors used in the picture, of which \nthere will typically be considerably fewer than 224, and then picking \nthe 256 colors that most closely approximate the colors used in the \npicture. \n• There might be more than 256 colors, however, so the trick is to try \nnot to distort the color too much by picking 256 colors such that no \npixel has its color changed too much.\n45\nLiu\nMultimedia Data\nComputing Networks\n• Image Representation and Compression\nBlock diagram of JPEG compression\n46\nLiu\nMultimedia Data\nComputing Networks\n• JPEG Compression\n– DCT Phase\n• DCT is a transformation closely related to the fast Fourier transform \n(FFT). It takes an\n• 8 × 8 matrix of pixel values as input and outputs an 8 × 8 matrix of \nfrequency coefficients.",
+    "metadata": {
+      "topic": "data_encoding",
+      "source": "pdf",
+      "chunk_id": 26,
+      "total_chunks": 32,
+      "filename": "Chapter_7_Data_Encoding.pdf"
+    },
+    "id": 37
+  },
+  {
+    "text": "– DCT Phase\n• DCT is a transformation closely related to the fast Fourier transform \n(FFT). It takes an\n• 8 × 8 matrix of pixel values as input and outputs an 8 × 8 matrix of \nfrequency coefficients.\n• You can think of the input matrix as a 64-point signal that is defined \nin two\n• spatial dimensions (x and y); DCT breaks this signal into 64 spatial \nfrequencies.\n47\nLiu\nMultimedia Data\nComputing Networks\n• JPEG Compression\n– DCT Phase\n• DCT, along with its inverse, which is performed during \ndecompression, is defined by the following formulas:\n• where pixel(x, y) is the grayscale value of the pixel at position (x, y) \nin the 8×8 block being compressed; N = 8 in this case\n48\nLiu\nMultimedia Data\nComputing Networks\n• JPEG Compression\n– Quantization Phase\n• The second phase of JPEG is where the compression becomes \nlossy. \n• DCT does not itself lose information; it just transforms the image \ninto a form that makes it easier to know what information to \nremove.",
+    "metadata": {
+      "topic": "data_encoding",
+      "source": "pdf",
+      "chunk_id": 27,
+      "total_chunks": 32,
+      "filename": "Chapter_7_Data_Encoding.pdf"
+    },
+    "id": 38
+  },
+  {
+    "text": "cond phase of JPEG is where the compression becomes \nlossy. \n• DCT does not itself lose information; it just transforms the image \ninto a form that makes it easier to know what information to \nremove. \n• Quantization is easy to understand—it’s simply a matter of \ndropping the insignificant bits of the frequency coefficients.\n49\nLiu\nMultimedia Data\nComputing Networks\n• JPEG Compression\n– Quantization Phase\n• The basic quantization equation is\nQuantizedValue(i, j) = IntegerRound(DCT(i, j)/Quantum(i, j))\nWhere\n• Decompression is then simply defined as\nDCT(i, j) = QuantizedValue(i, j) × Quantum(i, j)\n50\nLiu\nMultimedia Data\nComputing Networks\n• JPEG Compression\n– Encoding Phase\n• The final phase of JPEG encodes the quantized frequency \ncoefficients in a compact form. \n• This results in additional compression, but this compression is \nlossless. \n• Starting with the DC coefficient in position (0,0), the coefficients \nare processed in the zigzag sequence.",
+    "metadata": {
+      "topic": "data_encoding",
+      "source": "pdf",
+      "chunk_id": 28,
+      "total_chunks": 32,
+      "filename": "Chapter_7_Data_Encoding.pdf"
+    },
+    "id": 39
+  },
+  {
+    "text": "mpact form. \n• This results in additional compression, but this compression is \nlossless. \n• Starting with the DC coefficient in position (0,0), the coefficients \nare processed in the zigzag sequence. \n• Along this zigzag, a form of run length encoding is used—RLE is \napplied to only the 0 coefficients, which is significant because many \nof the later coefficients are 0. \n• The individual coefficient values are then encoded using a Huffman \ncode.\n51\nLiu\nMultimedia Data\nComputing Networks\n• Video Compression (MPEG)\n– We now turn our attention to the MPEG format, named \nafter the Moving Picture Experts Group that defined it. \n– To a first approximation, a moving picture (i.e., video) is \nsimply a succession of still images—also called frames or \npictures—displayed at some video rate. \n– Each of these frames can be compressed using the same \nDCT-based technique used in JPEG.",
+    "metadata": {
+      "topic": "data_encoding",
+      "source": "pdf",
+      "chunk_id": 29,
+      "total_chunks": 32,
+      "filename": "Chapter_7_Data_Encoding.pdf"
+    },
+    "id": 40
+  },
+  {
+    "text": "video) is \nsimply a succession of still images—also called frames or \npictures—displayed at some video rate. \n– Each of these frames can be compressed using the same \nDCT-based technique used in JPEG.\n52\nLiu\nMultimedia Data\nComputing Networks\n• Video Compression (MPEG)\nSequence of I, P, and B frames generated \nby MPEG.\n53\nLiu\nMultimedia Data\nComputing Networks\n• Video Compression (MPEG)\n– Frame Types\n• MPEG takes a sequence of video frames as input and compresses \nthem into three types of frames, called I frames (intrapicture), P \nframes (predicted picture), and B frames (bidirectional predicted \npicture). \n• Each frame of input is compressed into one of these three frame \ntypes. I frames can be thought of as reference frames; they are self-\ncontained, depending on neither earlier frames nor later frames.",
+    "metadata": {
+      "topic": "data_encoding",
+      "source": "pdf",
+      "chunk_id": 30,
+      "total_chunks": 32,
+      "filename": "Chapter_7_Data_Encoding.pdf"
+    },
+    "id": 41
+  },
+  {
+    "text": "Each frame of input is compressed into one of these three frame \ntypes. I frames can be thought of as reference frames; they are self-\ncontained, depending on neither earlier frames nor later frames.\n54\nLiu\nMultimedia Data\nComputing Networks\n• Video Compression (MPEG)\nEach frame as a collection of macroblocks\n55\nLiu\nMultimedia Data\nComputing Networks\n• Video Compression (MPEG)\nFormat of an MPEG-compressed video stream\n56\nLiu\nMultimedia Data\nComputing Networks\n• We have discussed how to represent represent data in \nthe network\n• We have discussed different compression techniques \nfor handling multimedia data in the network\n57\nLiu\nSummary",
+    "metadata": {
+      "topic": "data_encoding",
+      "source": "pdf",
+      "chunk_id": 31,
+      "total_chunks": 32,
+      "filename": "Chapter_7_Data_Encoding.pdf"
+    },
+    "id": 42
+  },
+  {
+    "text": "Dragon Ball Z is a cultural juggernaut, a Japanese anime series that aired from 1989 to 1996, adapted from Akira Toriyama’s manga (chapters 195–519 of Dragon Ball). It’s the sequel to Dragon Ball and precedes Dragon Ball GT and Dragon Ball Super. Known for its high-octane action, memorable characters, and sprawling narrative, it’s a cornerstone of anime history, influencing pop culture globally. Below, I’ll dive into its origins, story, characters, themes, cultural impact, and more, aiming to be comprehensive without spoiling every detail for new viewers.\nOrigins and Background\nDragon Ball Z (DBZ) was produced by Toei Animation and directed by Daisuke Nishio, among others. It’s based on the second part of Toriyama’s Dragon Ball manga, serialized in Weekly Shōnen Jump from 1984 to 1995. The “Z” distinguishes it from the lighter, adventure-focused Dragon Ball, shifting to intense battles and cosmic stakes.",
+    "metadata": {
+      "topic": "anime",
+      "source": "file_upload",
+      "file_type": "docx",
+      "chunk_id": 0,
+      "total_chunks": 10,
+      "filename": "Dragon_Ball_Z.docx"
+    },
+    "id": 43
+  },
+  {
+    "text": "riyama’s Dragon Ball manga, serialized in Weekly Shōnen Jump from 1984 to 1995. The “Z” distinguishes it from the lighter, adventure-focused Dragon Ball, shifting to intense battles and cosmic stakes. The anime spans 291 episodes, divided into four major sagas in the Japanese version (Saiyan, Namek/Frieza, Android/Cell, and Majin Buu), though English dubs often split them differently. It was first broadcast in Japan on Fuji TV, with international versions, particularly the Funimation English dub, cementing its global popularity.\nPlot Overview\nDBZ follows Goku, a Saiyan raised on Earth, as he defends the planet from escalating threats. The story begins with the arrival of Raditz, Goku’s brother, revealing Goku’s alien heritage and the Saiyans’ warrior culture. The series escalates through battles against increasingly powerful foes, blending martial arts, sci-fi, and fantasy. Key arcs include:\nSaiyan Saga: Introduces the Saiyans (Vegeta, Nappa, Raditz) and Goku’s origins.",
+    "metadata": {
+      "topic": "anime",
+      "source": "file_upload",
+      "file_type": "docx",
+      "chunk_id": 1,
+      "total_chunks": 10,
+      "filename": "Dragon_Ball_Z.docx"
+    },
+    "id": 44
+  },
+  {
+    "text": "alates through battles against increasingly powerful foes, blending martial arts, sci-fi, and fantasy. Key arcs include:\nSaiyan Saga: Introduces the Saiyans (Vegeta, Nappa, Raditz) and Goku’s origins. The Z Fighters (Goku’s allies) train to protect Earth.\nNamek/Frieza Saga: The Z Fighters travel to Namek to gather Dragon Balls, facing the tyrannical Frieza, a galactic overlord.\nAndroid/Cell Saga: Time travel, artificial beings, and a bio-engineered monster, Cell, push the heroes to their limits.\nMajin Buu Saga: A magical entity, Majin Buu, threatens the universe, leading to cosmic battles and character growth.\nThe narrative balances action with character development, exploring themes of sacrifice, redemption, and perseverance. The Dragon Balls—magical orbs that grant wishes—remain a central plot device, driving conflicts over their power.\nKey Characters\nDBZ’s cast is vast, but here are the core figures:\nGoku: The optimistic, pure-hearted Saiyan protagonist.",
+    "metadata": {
+      "topic": "anime",
+      "source": "file_upload",
+      "file_type": "docx",
+      "chunk_id": 2,
+      "total_chunks": 10,
+      "filename": "Dragon_Ball_Z.docx"
+    },
+    "id": 45
+  },
+  {
+    "text": "grant wishes—remain a central plot device, driving conflicts over their power.\nKey Characters\nDBZ’s cast is vast, but here are the core figures:\nGoku: The optimistic, pure-hearted Saiyan protagonist. A martial arts prodigy, he constantly seeks stronger opponents.\nVegeta: The proud Saiyan prince, initially a villain, whose arc toward heroism is a fan favorite.\nGohan: Goku’s son, whose hidden power and growth from child to warrior are central.\nPiccolo: A Namekian warrior, once Goku’s enemy, now a stoic ally.\nKrillin: Goku’s best friend, a human fighter with heart despite his limited power.\nFrieza: A cold, calculating galactic tyrant and one of anime’s most iconic villains.\nBulma: A genius inventor and key support character, often driving the plot with her tech.\nTrunks: Vegeta’s son from a future timeline, adding time-travel complexity.\nMajin Buu: A chaotic, shape-shifting entity with multiple forms, from playful to apocalyptic.",
+    "metadata": {
+      "topic": "anime",
+      "source": "file_upload",
+      "file_type": "docx",
+      "chunk_id": 3,
+      "total_chunks": 10,
+      "filename": "Dragon_Ball_Z.docx"
+    },
+    "id": 46
+  },
+  {
+    "text": "riving the plot with her tech.\nTrunks: Vegeta’s son from a future timeline, adding time-travel complexity.\nMajin Buu: A chaotic, shape-shifting entity with multiple forms, from playful to apocalyptic.\nThe ensemble grows, with each character contributing unique dynamics, from comic relief (like Master Roshi) to tragic depth (like Android 16).\nThemes and Style\nDBZ is a shōnen anime, emphasizing growth, friendship, and triumph over adversity. Key themes include:\nPower and Responsibility: Characters grapple with immense strength, often facing moral dilemmas (e.g., Vegeta’s redemption).\nFamily and Legacy: Goku and Gohan’s bond, and later Vegeta’s family, highlight generational growth.\nRedemption: Villains like Piccolo and Vegeta evolve, showcasing change and forgiveness.\nPerseverance: Training montages and last-second power-ups reflect the value of persistence.\nThe art style is vibrant, with exaggerated expressions and dynamic fight choreography.",
+    "metadata": {
+      "topic": "anime",
+      "source": "file_upload",
+      "file_type": "docx",
+      "chunk_id": 4,
+      "total_chunks": 10,
+      "filename": "Dragon_Ball_Z.docx"
+    },
+    "id": 47
+  },
+  {
+    "text": "ange and forgiveness.\nPerseverance: Training montages and last-second power-ups reflect the value of persistence.\nThe art style is vibrant, with exaggerated expressions and dynamic fight choreography. Battles are a hallmark, often spanning multiple episodes with dramatic transformations (e.g., Super Saiyan). The pacing, while criticized for filler, builds tension through prolonged confrontations. The soundtrack, especially Bruce Faulconer’s English dub score, is iconic, amplifying emotional and action-packed moments.\nCultural Impact\nDBZ’s influence is massive:\nGlobal Reach: It popularized anime in the West, airing on Toonami in the U.S. and inspiring a generation of fans.\nMerchandise and Media: From video games (Dragon Ball Z: Budokai, FighterZ) to toys, clothing, and movies (e.g., Dragon Ball Z: Battle of Gods), DBZ is a commercial titan.\nFandom: The series sparked conventions, fan art, and debates (e.g., “Who’s stronger, Goku or Superman?”). Its memes, like “It’s over 9000!",
+    "metadata": {
+      "topic": "anime",
+      "source": "file_upload",
+      "file_type": "docx",
+      "chunk_id": 5,
+      "total_chunks": 10,
+      "filename": "Dragon_Ball_Z.docx"
+    },
+    "id": 48
+  },
+  {
+    "text": "., Dragon Ball Z: Battle of Gods), DBZ is a commercial titan.\nFandom: The series sparked conventions, fan art, and debates (e.g., “Who’s stronger, Goku or Superman?”). Its memes, like “It’s over 9000!”, are internet staples.\nInfluence on Anime: DBZ set the template for modern shōnen, influencing Naruto, One Piece, and others with its power-scaling and emotional depth.\nProduction and Versions\nThe anime diverges from the manga with filler episodes (e.g., the Garlic Jr. Saga) to pad runtime while the manga progressed. The English dub by Funimation, starting in 1996, initially faced censorship but later released uncut versions. Dragon Ball Z Kai (2009–2015) is a remastered, filler-reduced version, truer to the manga. Subbed vs. dubbed debates persist, with purists favoring the Japanese voice acting for authenticity, while the English dub’s nostalgia resonates with Western fans.\nLegacy and Sequels\nDBZ spawned sequels (Dragon Ball GT, Dragon Ball Super), movies, and spin-offs.",
+    "metadata": {
+      "topic": "anime",
+      "source": "file_upload",
+      "file_type": "docx",
+      "chunk_id": 6,
+      "total_chunks": 10,
+      "filename": "Dragon_Ball_Z.docx"
+    },
+    "id": 49
+  },
+  {
+    "text": "apanese voice acting for authenticity, while the English dub’s nostalgia resonates with Western fans.\nLegacy and Sequels\nDBZ spawned sequels (Dragon Ball GT, Dragon Ball Super), movies, and spin-offs. Super (2015–2018) continues the story post-Buu, introducing gods and multiverses, though some fans prefer DBZ’s tighter narrative. The franchise remains active, with Dragon Ball Daima (2024) and ongoing manga arcs. Video games like Dragon Ball Z: Kakarot let fans relive the story interactively.\nFun Facts\nThe “Z” in DBZ was Toriyama’s idea, signifying the story’s end (though Super later continued it).\nGoku’s Super Saiyan form was inspired by Toriyama wanting to save time on inking black hair, opting for gold.\nThe series’ power levels, like Vegeta’s “over 9000” line, became a meme, though power scaling later became abstract.\nDBZ’s English dub popularized terms like “Super Saiyan,” now synonymous with anime culture.",
+    "metadata": {
+      "topic": "anime",
+      "source": "file_upload",
+      "file_type": "docx",
+      "chunk_id": 7,
+      "total_chunks": 10,
+      "filename": "Dragon_Ball_Z.docx"
+    },
+    "id": 50
+  },
+  {
+    "text": "es’ power levels, like Vegeta’s “over 9000” line, became a meme, though power scaling later became abstract.\nDBZ’s English dub popularized terms like “Super Saiyan,” now synonymous with anime culture.\nWhere to Start\nFor newcomers:\nWatch: Start with Dragon Ball for context, then Dragon Ball Z or Dragon Ball Z Kai (faster-paced). Stream on Crunchyroll, Funimation, or Hulu.\nRead: The Dragon Ball manga (volumes 17–42 for DBZ) is available via Viz Media.\nGames: Try Dragon Ball Z: Budokai Tenkaichi 3 or Dragon Ball FighterZ for immersive experiences.\nWhy It Endures\nDBZ’s blend of universal themes, relatable characters, and adrenaline-pumping action resonates across ages and cultures. Its underdog spirit—heroes pushing beyond limits—strikes a chord, while its humor and heart keep it accessible. Whether you’re drawn to Goku’s optimism or Vegeta’s pride, there’s a character for everyone.\nIf you want specifics (e.g., a saga breakdown, character analysis, or game recommendations), let me know!",
+    "metadata": {
+      "topic": "anime",
+      "source": "file_upload",
+      "file_type": "docx",
+      "chunk_id": 8,
+      "total_chunks": 10,
+      "filename": "Dragon_Ball_Z.docx"
+    },
+    "id": 51
+  },
+  {
+    "text": ". Whether you’re drawn to Goku’s optimism or Vegeta’s pride, there’s a character for everyone.\nIf you want specifics (e.g., a saga breakdown, character analysis, or game recommendations), let me know! I can also check X for fan discussions or search for recent DBZ-related content if you’re curious about its current relevance.",
+    "metadata": {
+      "topic": "anime",
+      "source": "file_upload",
+      "file_type": "docx",
+      "chunk_id": 9,
+      "total_chunks": 10,
+      "filename": "Dragon_Ball_Z.docx"
+    },
+    "id": 52
+  },
+  {
+    "text": "Introduction to Machine Learning\n\nMachine learning is a subset of artificial intelligence that enables computers to learn and make decisions without being explicitly programmed. It focuses on developing algorithms that can access data and use it to learn for themselves.\n\nKey Concepts in Machine Learning:\n\n1. Supervised Learning: The algorithm learns from labeled training data to make predictions on new, unseen data. Examples include classification and regression tasks.\n\n2. Unsupervised Learning: The algorithm finds hidden patterns in data without any labels. Examples include clustering and dimensionality reduction.\n\n3. Reinforcement Learning: The algorithm learns by interacting with an environment and receiving rewards or penalties for actions.\n\nCommon Applications:\n- Image recognition and computer vision\n- Natural language processing\n- Recommendation systems\n- Fraud detection\n- Medical diagnosis\n- Autonomous vehicles\n\nThe machine learning pipeline typically involves:\n1.",
+    "metadata": {
+      "topic": "machine_learning",
+      "source": "file_upload",
+      "file_type": "txt",
+      "chunk_id": 0,
+      "total_chunks": 2,
+      "filename": "sample_text.txt"
+    },
+    "id": 53
+  },
+  {
+    "text": "recognition and computer vision\n- Natural language processing\n- Recommendation systems\n- Fraud detection\n- Medical diagnosis\n- Autonomous vehicles\n\nThe machine learning pipeline typically involves:\n1. Data collection and preprocessing\n2. Feature engineering\n3. Model selection and training\n4. Evaluation and validation\n5. Deployment and monitoring\n\nPopular machine learning libraries include:\n- Scikit-learn for traditional ML algorithms\n- TensorFlow and PyTorch for deep learning\n- Pandas for data manipulation\n- NumPy for numerical computations\n\nMachine learning continues to evolve rapidly, with new techniques and applications being developed constantly. It has become an essential tool in many industries and is driving innovation across various domains.",
+    "metadata": {
+      "topic": "machine_learning",
+      "source": "file_upload",
+      "file_type": "txt",
+      "chunk_id": 1,
+      "total_chunks": 2,
+      "filename": "sample_text.txt"
+    },
+    "id": 54
+  },
+  {
+    "text": "This is the first test image.\n\nThis is the second test image.",
+    "metadata": {
+      "topic": "ocr_test",
+      "source": "file_upload",
+      "file_type": "pdf",
+      "chunk_id": 0,
+      "total_chunks": 1,
+      "filename": "tesseract_test.pdf",
+      "ocr_used": true
+    },
+    "id": 55
+  },
+  {
+    "text": "Columns: Code, Branch Name, Phone Number, Address, Lat, Long, District, Thana, Google Map\nTotal rows: 3\n\nSample data (first 3 rows):\nRow 1: Code: 3 | Branch Name: Jatrabari Dhaka | Phone Number: 1847099003 | Address: মোঃ আলহাজ্ব নুরুদ্দিন সরদার, ৮নং সহিদ ফারুক রোড, যাত্রাবাড়ী, ঢাকা । | Lat: 23.70933 | Long: 90.428389 | District: Dhaka | Thana: Jatrabari | Google Map: Map\nRow 2: Code: 10 | Branch Name: Mirhajirbag-Jatrabari Dhaka | Phone Number: 1847099010 | Address: খালেদা সুলতানা, ৯৯/ই, শহিদ ফারুক রোড, যাত্রাবাড়ি, | Lat: 23.7090641 | Long: 90.4312903 | District: Dhaka | Thana: Jatrabari | Google Map: Map\nRow 3: Code: 308 | Branch Name: Shyampur Dhaka | Phone Number: 1847099308 | Address: জনাব মোঃ জাহাঙ্গীর আলম চৌধুরী (অ্যাডভোকেট) ঠিকানা বাড়ি নং: ৩৪২/৬(দ্বিতীয় তলা) জুরাইন খন্দকার রোড,পূবালী ব্যাংক এর পিছনে ,ফরিদাবাদ, শ্যামপুর- ঢাকা | Lat: 23.6956411 | Long: 90.4335505 | District: Dhaka | Thana: Jatrabari | Google Map: Map\n\nNumeric column statistics:\nCode: mean=107.00, std=174.",
+    "metadata": {
+      "topic": "coverage_data",
+      "source": "file_upload",
+      "file_type": "csv",
+      "chunk_id": 0,
+      "total_chunks": 2,
+      "filename": "Coverage_SHAKTI.csv",
+      "ocr_used": false
+    },
+    "id": 56
+  },
+  {
+    "text": "রোড,পূবালী ব্যাংক এর পিছনে ,ফরিদাবাদ, শ্যামপুর- ঢাকা | Lat: 23.6956411 | Long: 90.4335505 | District: Dhaka | Thana: Jatrabari | Google Map: Map\n\nNumeric column statistics:\nCode: mean=107.00, std=174.11, min=3.00, max=308.00\nPhone Number: mean=1847099107.00, std=174.11, min=1847099003.00, max=1847099308.00\nLat: mean=23.70, std=0.01, min=23.70, max=23.71\nLong: mean=90.43, std=0.00, min=90.43, max=90.43",
+    "metadata": {
+      "topic": "coverage_data",
+      "source": "file_upload",
+      "file_type": "csv",
+      "chunk_id": 1,
+      "total_chunks": 2,
+      "filename": "Coverage_SHAKTI.csv",
+      "ocr_used": false
+    },
+    "id": 57
+  },
+  {
+    "text": "SQLite Database Analysis\nTotal tables: 4\n\n=== Table: users ===\nColumns (5):\n  - id (INTEGER)\n  - name (TEXT)\n  - email (TEXT)\n  - age (INTEGER)\n  - department (TEXT)\nTotal rows: 5\nSample data (first 5 rows):\n  Row 1: id: 1 | name: John Doe | email: john@example.com | age: 25 | department: Engineering\n  Row 2: id: 2 | name: Jane Smith | email: jane@example.com | age: 30 | department: Marketing\n  Row 3: id: 3 | name: Bob Johnson | email: bob@example.com | age: 35 | department: Sales\n  Row 4: id: 4 | name: Alice Brown | email: alice@example.com | age: 28 | department: Engineering\n  Row 5: id: 5 | name: Charlie Wilson | email: charlie@example.com | age: 32 | department: HR\nNumeric column statistics:\n  id: mean=3.00, std=1.58, min=1.00, max=5.00\n  age: mean=30.00, std=3.81, min=25.00, max=35.00\n\n=== Table: products ===\nColumns (5):\n  - product_id (INTEGER)\n  - product_name (TEXT)\n  - price (REAL)\n  - category (TEXT)\n  - stock_quantity (INTEGER)\nTotal rows: 5\nSample data (first 5 rows):\n  Ro",
+    "metadata": {
+      "topic": "database_test",
+      "source": "file_upload",
+      "file_type": "db",
+      "chunk_id": 0,
+      "total_chunks": 5,
+      "filename": "sample_database.db",
+      "ocr_used": false
+    },
+    "id": 58
+  },
+  {
+    "text": "=== Table: products ===\nColumns (5):\n  - product_id (INTEGER)\n  - product_name (TEXT)\n  - price (REAL)\n  - category (TEXT)\n  - stock_quantity (INTEGER)\nTotal rows: 5\nSample data (first 5 rows):\n  Row 1: product_id: 101 | product_name: Laptop | price: 999.99 | category: Electronics | stock_quantity: 50\n  Row 2: product_id: 102 | product_name: Mouse | price: 29.99 | category: Accessories | stock_quantity: 200\n  Row 3: product_id: 103 | product_name: Keyboard | price: 79.99 | category: Accessories | stock_quantity: 150\n  Row 4: product_id: 104 | product_name: Monitor | price: 299.99 | category: Electronics | stock_quantity: 30\n  Row 5: product_id: 105 | product_name: Headphones | price: 149.99 | category: Accessories | stock_quantity: 75\nNumeric column statistics:\n  product_id: mean=103.00, std=1.58, min=101.00, max=105.00\n  price: mean=311.99, std=397.83, min=29.99, max=999.99\n  stock_quantity: mean=101.00, std=71.62, min=30.00, max=200.",
+    "metadata": {
+      "topic": "database_test",
+      "source": "file_upload",
+      "file_type": "db",
+      "chunk_id": 1,
+      "total_chunks": 5,
+      "filename": "sample_database.db",
+      "ocr_used": false
+    },
+    "id": 59
+  },
+  {
+    "text": "ric column statistics:\n  product_id: mean=103.00, std=1.58, min=101.00, max=105.00\n  price: mean=311.99, std=397.83, min=29.99, max=999.99\n  stock_quantity: mean=101.00, std=71.62, min=30.00, max=200.00\n\n=== Table: orders ===\nColumns (6):\n  - order_id (INTEGER)\n  - user_id (INTEGER)\n  - product_id (INTEGER)\n  - quantity (INTEGER)\n  - order_date (TEXT)\n  - total_amount (REAL)\nTotal rows: 5\nSample data (first 5 rows):\n  Row 1: order_id: 1001 | user_id: 1 | product_id: 101 | quantity: 1 | order_date: 2024-01-15 | total_amount: 999.99\n  Row 2: order_id: 1002 | user_id: 2 | product_id: 102 | quantity: 2 | order_date: 2024-01-16 | total_amount: 59.98\n  Row 3: order_id: 1003 | user_id: 3 | product_id: 103 | quantity: 1 | order_date: 2024-01-17 | total_amount: 79.99\n  Row 4: order_id: 1004 | user_id: 1 | product_id: 104 | quantity: 1 | order_date: 2024-01-18 | total_amount: 299.99\n  Row 5: order_id: 1005 | user_id: 4 | product_id: 105 | quantity: 3 | order_date: 2024-01-19 | total_amount: 449.",
+    "metadata": {
+      "topic": "database_test",
+      "source": "file_upload",
+      "file_type": "db",
+      "chunk_id": 2,
+      "total_chunks": 5,
+      "filename": "sample_database.db",
+      "ocr_used": false
+    },
+    "id": 60
+  },
+  {
+    "text": "id: 1 | product_id: 104 | quantity: 1 | order_date: 2024-01-18 | total_amount: 299.99\n  Row 5: order_id: 1005 | user_id: 4 | product_id: 105 | quantity: 3 | order_date: 2024-01-19 | total_amount: 449.97\nNumeric column statistics:\n  order_id: mean=1003.00, std=1.58, min=1001.00, max=1005.00\n  user_id: mean=2.20, std=1.30, min=1.00, max=4.00\n  product_id: mean=103.00, std=1.58, min=101.00, max=105.00\n  quantity: mean=1.60, std=0.89, min=1.00, max=3.00\n  total_amount: mean=377.98, std=383.43, min=59.98, max=999.99\n\n=== Table: departments ===\nColumns (4):\n  - dept_id (INTEGER)\n  - dept_name (TEXT)\n  - manager (TEXT)\n  - budget (INTEGER)\nTotal rows: 5\nSample data (first 5 rows):\n  Row 1: dept_id: 1 | dept_name: Engineering | manager: John Manager | budget: 500000\n  Row 2: dept_id: 2 | dept_name: Marketing | manager: Jane Manager | budget: 200000\n  Row 3: dept_id: 3 | dept_name: Sales | manager: Bob Manager | budget: 300000\n  Row 4: dept_id: 4 | dept_name: HR | manager: Alice Manager | budge",
+    "metadata": {
+      "topic": "database_test",
+      "source": "file_upload",
+      "file_type": "db",
+      "chunk_id": 3,
+      "total_chunks": 5,
+      "filename": "sample_database.db",
+      "ocr_used": false
+    },
+    "id": 61
+  },
+  {
+    "text": ": Marketing | manager: Jane Manager | budget: 200000\n  Row 3: dept_id: 3 | dept_name: Sales | manager: Bob Manager | budget: 300000\n  Row 4: dept_id: 4 | dept_name: HR | manager: Alice Manager | budget: 100000\n  Row 5: dept_id: 5 | dept_name: Finance | manager: Charlie Manager | budget: 400000\nNumeric column statistics:\n  dept_id: mean=3.00, std=1.58, min=1.00, max=5.00\n  budget: mean=300000.00, std=158113.88, min=100000.00, max=500000.00",
+    "metadata": {
+      "topic": "database_test",
+      "source": "file_upload",
+      "file_type": "db",
+      "chunk_id": 4,
+      "total_chunks": 5,
+      "filename": "sample_database.db",
+      "ocr_used": false
+    },
+    "id": 62
+  }
+]
